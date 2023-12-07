@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import matplotlib.pyplot as plt
-df=pd.read_csv(r"C:\Users\Qwon\Desktop\Dev\data_science_projects\chicago\jannov.csv")
+df=pd.read_csv("data\dfdata.csv")
 #df=data.head(100658)
 figcrashtype=px.bar( df["FIRST_CRASH_TYPE"].value_counts(),
            color=df["FIRST_CRASH_TYPE"].value_counts(),
