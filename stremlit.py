@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import matplotlib.pyplot as plt
-https://raw.githubusercontent.com/YonQwon/Chicago-crashes/main/data/dfdata.csv
+#https://raw.githubusercontent.com/YonQwon/Chicago-crashes/main/data/dfdata.csv
 df=pd.read_csv("https://raw.githubusercontent.com/YonQwon/Chicago-crashes/main/data/dfdata.csv")
 #df=data.head(100658)
 figcrashtype=px.bar( df["FIRST_CRASH_TYPE"].value_counts(),
